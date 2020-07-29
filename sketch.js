@@ -77,6 +77,8 @@ function spawnClouds()
 function draw() {
   background(180);
     text("Score:"+score,500,50);
+  text("High score:"+localStorage["HighestScore"],400,50);
+  
   ground.velocityX=-2;
   if (gameState===PLAY){
     score=score+Math.round(getFrameRate()/60);
